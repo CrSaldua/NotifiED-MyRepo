@@ -1,0 +1,48 @@
+@startuml SystemContext_StudentMobileApp
+
+title System Context Diagram - Centralized Student Information Mobile Application
+
+skinparam backgroundColor #FFFFFF
+skinparam defaultTextAlignment center
+skinparam roundcorner 10
+skinparam shadowing false
+
+skinparam rectangle {
+    BorderColor #666666
+    FontColor #FFFFFF
+    FontSize 14
+}
+
+skinparam arrow {
+    Color #666666
+    FontColor #333333
+    FontSize 12
+}
+
+' ===== Person =====
+rectangle "**Student**\n<size:11>A university student who wants to access\nannouncements, email, calendar, and\nnotifications from a single application." as student #08427B
+
+' ===== Core System (in scope) =====
+rectangle "**Student Mobile Application**\n<size:11>React Native mobile app that lets students\nsign in and view a centralized dashboard of\nannouncements, email, calendar, and\nnotifications, with an AI chatbot for\nsummarization and navigation.\n(Team 2 - our system)" as mobileApp #1168BD
+
+' ===== External Systems =====
+rectangle "**Backend Integration Service**\n<size:11>Retrieves, aggregates, and exposes public\nand personalized information (announcements,\nemail, calendar, notifications) through\nstandardized APIs. Implementation details\nare outside frontend scope.\n(Developed by Team 1)>" as backendService #999999
+
+rectangle "**Microsoft Identity Platform**\n<size:11>Authenticates students using their\nuniversity Microsoft account and\nissues authorization tokens." as msIdentity #999999
+
+' ===== Relationships =====
+student -down-> mobileApp : "Signs in, views announcements,\nemail, calendar, notifications,\nand interacts with AI chatbot"
+
+mobileApp -right-> msIdentity : "Initiates authentication\n<size:10>[OAuth 2.0 / HTTPS]"
+
+mobileApp -down-> backendService : "Requests announcements, emails,\ncalendar events, notifications,\nand summarized information\n<size:10>[REST API / HTTPS]"
+
+' ===== Legend =====
+legend right
+  |= Color |= Type |
+  |<#08427B>| Person |
+  |<#1168BD>| System (In Scope) |
+  |<#999999>| External System |
+endlegend
+
+@enduml
