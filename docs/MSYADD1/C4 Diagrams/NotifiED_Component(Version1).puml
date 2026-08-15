@@ -1,61 +1,43 @@
 @startuml Component_UILayer_Final
 title Component Diagram - UI / Presentation Layer (Version 3)
-skinparam backgroundColor 
-#FFFFFF
+skinparam backgroundColor #FFFFFF
 skinparam defaultTextAlignment center
 skinparam roundcorner 10
 skinparam shadowing false
 skinparam ranksep 55
 skinparam nodesep 35
 skinparam rectangle {
-    BorderColor 
-#666666
-    FontColor 
-#FFFFFF
+    BorderColor #666666
+    FontColor #FFFFFF
     FontSize 12
 }
 skinparam arrow {
-    Color 
-#666666
-    FontColor 
-#333333
+    Color #666666
+    FontColor #333333
     FontSize 10
 }
-rectangle "**Student**\n<size:9>Interacts with screens and\nnavigation controls.</size>" as student 
-#08427B
+rectangle "**Student**\n<size:9>Interacts with screens and\nnavigation controls.</size>" as student #08427B
 package "UI / Presentation Layer" {
-    rectangle "**Navigation Router**\n<size:9>Bottom navigation. Routes to Access\nDashboard, View Calendar, Browse\nOrganization, and Manage Events. Routes\nView Emails and Manage User Account\nfrom their respective icons.</size>" as navRouter 
-#1168BD
-    rectangle "**AI Chatbot Screen**\n<size:9>Handles Ask Question and Summarize\nInformation, matching the AI Chatbot\nmodule in the approved UCD.</size>" as aiScreen 
-#1168BD
+    rectangle "**Navigation Router**\n<size:9>Bottom navigation. Routes to Access\nDashboard, View Calendar, Browse\nOrganization, and Manage Events. Routes\nView Emails and Manage User Account\nfrom their respective icons.</size>" as navRouter #1168BD
+    rectangle "**AI Chatbot Screen**\n<size:9>Handles Ask Question and Summarize\nInformation, matching the AI Chatbot\nmodule in the approved UCD.</size>" as aiScreen #1168BD
     together {
-        rectangle "**Access Dashboard Screen**\n<size:9>Includes View Calendar, View Notification,\nand View Email previews via Retrieve Data.</size>" as dashboardScreen 
-#1168BD
-        rectangle "**Manage Events Screen**\n<size:9>Handles Browse Events, Register for Event,\nConfirm Registration, and View\nRegistration Status.</size>" as eventsScreen 
-#1168BD
+        rectangle "**Access Dashboard Screen**\n<size:9>Includes View Calendar, View Notification,\nand View Email previews via Retrieve Data.</size>" as dashboardScreen #1168BD
+        rectangle "**Manage Events Screen**\n<size:9>Handles Browse Events, Register for Event,\nConfirm Registration, and View\nRegistration Status.</size>" as eventsScreen #1168BD
     }
     together {
-        rectangle "**View Calendar Screen**\n<size:9>Handles Retrieve Calendar and Retrieve\nUpcoming Campus Event.</size>" as calendarScreen 
-#1168BD
-        rectangle "**Browse Organization Screen**\n<size:9>Handles Filter Organization, View\nOrganization Details, and Retrieve\nOrganizations.</size>" as orgScreen 
-#1168BD
+        rectangle "**View Calendar Screen**\n<size:9>Handles Retrieve Calendar and Retrieve\nUpcoming Campus Event.</size>" as calendarScreen #1168BD
+        rectangle "**Browse Organization Screen**\n<size:9>Handles Filter Organization, View\nOrganization Details, and Retrieve\nOrganizations.</size>" as orgScreen #1168BD
     }
-    rectangle "**Manage User Account Screen**\n<size:9>Handles Log In (includes Authenticates\nUser), Edit Profile (includes Retrieves\nProfile Data), and Log Out.</size>" as accountScreen 
-#1168BD
+    rectangle "**Manage User Account Screen**\n<size:9>Handles Log In (includes Authenticates\nUser), Edit Profile (includes Retrieves\nProfile Data), and Log Out.</size>" as accountScreen #1168BD
 }
 together {
-    rectangle "**Local State / Cache**\n<size:9>Shared store for data retrieved\nfrom Calendar Client and\nWeb Team API Client.</size>" as localState 
-#999999
-    rectangle "**AI Chatbot Module**\n<size:9>Answers questions,\nsummarizes information.</size>" as aiModule 
-#999999
+    rectangle "**Local State / Cache**\n<size:9>Shared store for data retrieved\nfrom Calendar Client and\nWeb Team API Client.</size>" as localState #999999
+    rectangle "**AI Chatbot Module**\n<size:9>Answers questions,\nsummarizes information.</size>" as aiModule #999999
 }
 together {
-    rectangle "**Notification Handler**\n<size:9>Supplies View\nNotification data.</size>" as notifHandler 
-#999999
-    rectangle "**Email Redirect Handler**\n<size:9>Handles View Emails,\nredirects to Outlook.</size>" as emailRedirect 
-#999999
-    rectangle "**Auth Handler**\n<size:9>Handles Log In,\nLog Out.</size>" as authHandler 
-#999999
+    rectangle "**Notification Handler**\n<size:9>Supplies View\nNotification data.</size>" as notifHandler #999999
+    rectangle "**Email Redirect Handler**\n<size:9>Handles View Emails,\nredirects to Outlook.</size>" as emailRedirect #999999
+    rectangle "**Auth Handler**\n<size:9>Handles Log In,\nLog Out.</size>" as authHandler #999999
 }
 student -down-> navRouter : "Taps nav bar / icons"
 navRouter -down-> dashboardScreen : "Access Dashboard"
