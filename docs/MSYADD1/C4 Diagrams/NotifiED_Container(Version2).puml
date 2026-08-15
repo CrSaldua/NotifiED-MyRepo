@@ -1,0 +1,120 @@
+@startuml Container_NotifiED_v3
+ 
+title Container Diagram - NotifiED Mobile Application (Level 2)
+ 
+skinparam backgroundColor #FFFFFF
+
+skinparam defaultTextAlignment center
+
+skinparam roundcorner 10
+
+skinparam shadowing false
+
+skinparam ranksep 60
+
+skinparam nodesep 40
+ 
+skinparam rectangle {
+
+    BorderColor #666666
+
+    FontColor #FFFFFF
+
+    FontSize 12
+
+}
+ 
+skinparam arrow {
+
+    Color #666666
+
+    FontColor #333333
+
+    FontSize 10
+
+}
+ 
+' ===== Person =====
+
+rectangle "**Student**\n<size:9>A university student who wants to discover\nevents, view calendar, access email, and\nmanage their profile in one application.</size>" as student #08427B
+ 
+' ===== System Boundary =====
+
+package "NotifiED Mobile Application (React Native)" {
+ 
+    rectangle "**UI / Presentation Layer**\n<size:9>Screens for Dashboard (with AI search bar),\nEvents (All/My Registration/Saved), Event\nDetails, Organizations, Calendar (My Schedule/\nCampus Events), Notifications bell, and Profile\n(via avatar icon). Renders data and captures\nstudent interactions.</size>" as uiLayer #1168BD
+ 
+    together {
+
+        rectangle "**Auth Handler**\n<size:9>Manages the OAuth 2.0 sign-in flow with\nMicrosoft Identity Platform. Requests and\nstores the authorization token used for\ncalendar access and email redirect.</size>" as authHandler #1168BD
+ 
+        rectangle "**AI Assistant Module**\n<size:9>Powers the "Ask Notified anything" search\nbar. Interprets student questions/commands,\nsummarizes events, cross-references events\nwith the student's calendar, and triggers\nin-app navigation.</size>" as aiModule #1168BD
+ 
+        rectangle "**Notification Handler**\n<size:9>Schedules and manages push notifications\nand the notification bell badge count for\nupcoming events and personalized reminders.</size>" as notifHandler #1168BD
+
+    }
+ 
+    rectangle "**Local State / Cache**\n<size:9>Shared in-memory store for fetched events,\norganizations, calendar data, registrations,\nsaved events, and profile. UI, AI Assistant,\nand Notification Handler all read from this\nsingle source. Tracks last-synced timestamp\nshown on the Calendar screen.</size>" as localState #1168BD
+ 
+    together {
+
+        rectangle "**Calendar Client**\n<size:9>Requests the student's calendar using the\ntoken from Auth Handler. Supports periodic\nsync (shown as "Last synced" on-screen).\nWrites results to Local State / Cache.</size>" as calendarClient #1168BD
+ 
+        rectangle "**Backend API Client**\n<size:9>Requests approved events, organization data,\nand the student's NotifiED profile. Handles\nsearch, filtering, event registration (RSVP),\nsaved/bookmarked events, and profile create/\nupdate requests. Writes results to Local\nState / Cache.</size>" as backendClient #1168BD
+ 
+        rectangle "**Email Redirect Handler**\n<size:9>Opens the student's institutional email\napp or webmail using the authenticated\naccount, triggered from the mail icon.\nDoes not fetch or store email content\ninside NotifiED.</size>" as emailRedirect #1168BD
+
+    }
+ 
+}
+ 
+' ===== External Systems =====
+
+together {
+
+    rectangle "**Microsoft Identity Platform**\n<size:9>Authenticates students using their\ninstitutional Microsoft account. Issues\nauthorization tokens, provides calendar data,\nand is the target of the email redirect.</size>" as msIdentity #999999
+ 
+    rectangle "**NotifiED Backend**\n<size:9>Manages event submission, approval,\norganization data, and event registrations.\nStores the student's NotifiED profile.\nExposes this information through\nstandardized APIs. (Developed by Team 1)</size>" as backendService #999999
+
+}
+ 
+' ===== Relationships =====
+
+student -down-> uiLayer : "Views screens, signs in,\ninteracts with AI assistant"
+ 
+uiLayer -down-> authHandler : "Initiates sign-in"
+
+uiLayer -down-> aiModule : "Sends questions /\ncommands"
+
+notifHandler -up-> uiLayer : "Surfaces notifications"
+
+aiModule -up-> uiLayer : "Triggers navigation\nto requested screen"
+
+uiLayer -down-> emailRedirect : "Taps mail icon"
+ 
+uiLayer -down-> localState : "Reads events, calendar,\norganizations, profile"
+
+aiModule -down-> localState : "Reads event and calendar\ndata to summarize/answer"
+
+notifHandler -down-> localState : "Reads upcoming event and\nschedule data for reminders"
+ 
+authHandler -down-> calendarClient : "Provides access token"
+
+authHandler -down-> backendClient : "Provides access token"
+
+authHandler -down-> emailRedirect : "Provides authenticated\naccount context"
+
+authHandler -left-> msIdentity : "Authenticates student\n<size:8>[OAuth 2.0 / HTTPS]</size>"
+ 
+calendarClient -down-> msIdentity : "Requests calendar data\n<size:8>[HTTPS]</size>"
+
+backendClient -down-> backendService : "Requests/updates events,\nregistrations, profile\n<size:8>[REST API / HTTPS]</size>"
+
+emailRedirect -down-> msIdentity : "Opens institutional email\n<size:8>[Deep link / HTTPS]</size>"
+ 
+calendarClient -up-> localState : "Caches calendar"
+
+backendClient -up-> localState : "Caches events, orgs,\nregistrations, profile"
+ 
+@enduml
+ 
