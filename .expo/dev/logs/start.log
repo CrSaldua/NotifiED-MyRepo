@@ -1,0 +1,232 @@
+{"_e":"root:init","_t":1789717870893,"format":"v0-jsonl","version":"57.0.25"}
+{"_e":"env:mode","_t":1789717870893,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1789717870896,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1789717884339,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1789717897816,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1789717907567,"plugins":[]}
+{"_e":"metro:instantiate","_t":1789717922666,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1789718027373,"id":"2","platform":"ios","environment":null,"entry":"index.ts"}
+{"_e":"metro:bundling:progress","_t":1789718027373,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789718027377,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789718040953,"id":"2","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1789718041060,"id":"2","progress":0.09,"total":6,"current":3}
+{"_e":"metro:bundling:progress","_t":1789718041161,"id":"2","progress":0.25,"total":10,"current":5}
+{"_e":"metro:bundling:progress","_t":1789718041270,"id":"2","progress":0.36,"total":10,"current":6}
+{"_e":"metro:bundling:progress","_t":1789718041634,"id":"2","progress":0.48999999999999994,"total":10,"current":7}
+{"_e":"metro:bundling:progress","_t":1789718041736,"id":"2","progress":0.48999999999999994,"total":43,"current":22}
+{"_e":"metro:bundling:progress","_t":1789718041837,"id":"2","progress":0.48999999999999994,"total":55,"current":31}
+{"_e":"metro:bundling:progress","_t":1789718041937,"id":"2","progress":0.48999999999999994,"total":64,"current":43}
+{"_e":"metro:bundling:progress","_t":1789718042042,"id":"2","progress":0.48999999999999994,"total":96,"current":56}
+{"_e":"metro:bundling:progress","_t":1789718042148,"id":"2","progress":0.48999999999999994,"total":107,"current":65}
+{"_e":"metro:bundling:progress","_t":1789718042252,"id":"2","progress":0.48999999999999994,"total":121,"current":74}
+{"_e":"metro:bundling:progress","_t":1789718042360,"id":"2","progress":0.48999999999999994,"total":187,"current":95}
+{"_e":"metro:bundling:progress","_t":1789718042464,"id":"2","progress":0.48999999999999994,"total":281,"current":102}
+{"_e":"metro:bundling:progress","_t":1789718042622,"id":"2","progress":0.48999999999999994,"total":281,"current":103}
+{"_e":"metro:bundling:progress","_t":1789718042729,"id":"2","progress":0.48999999999999994,"total":307,"current":109}
+{"_e":"metro:bundling:progress","_t":1789718042798,"id":"2","progress":0.48999999999999994,"total":307,"current":110}
+{"_e":"metro:bundling:progress","_t":1789718042903,"id":"2","progress":0.48999999999999994,"total":307,"current":111}
+{"_e":"metro:bundling:progress","_t":1789718044063,"id":"2","progress":0.48999999999999994,"total":307,"current":112}
+{"_e":"metro:bundling:progress","_t":1789718044172,"id":"2","progress":0.48999999999999994,"total":311,"current":122}
+{"_e":"metro:bundling:progress","_t":1789718044272,"id":"2","progress":0.48999999999999994,"total":337,"current":144}
+{"_e":"metro:bundling:progress","_t":1789718044372,"id":"2","progress":0.48999999999999994,"total":367,"current":173}
+{"_e":"metro:bundling:progress","_t":1789718044473,"id":"2","progress":0.48999999999999994,"total":384,"current":194}
+{"_e":"metro:bundling:progress","_t":1789718044585,"id":"2","progress":0.48999999999999994,"total":407,"current":208}
+{"_e":"metro:bundling:progress","_t":1789718044687,"id":"2","progress":0.48999999999999994,"total":428,"current":235}
+{"_e":"metro:bundling:progress","_t":1789718044787,"id":"2","progress":0.48999999999999994,"total":471,"current":278}
+{"_e":"metro:bundling:progress","_t":1789718044888,"id":"2","progress":0.48999999999999994,"total":487,"current":315}
+{"_e":"metro:bundling:progress","_t":1789718044988,"id":"2","progress":0.48999999999999994,"total":493,"current":319}
+{"_e":"metro:bundling:progress","_t":1789718045089,"id":"2","progress":0.48999999999999994,"total":495,"current":322}
+{"_e":"metro:bundling:progress","_t":1789718045448,"id":"2","progress":0.48999999999999994,"total":495,"current":323}
+{"_e":"metro:bundling:progress","_t":1789718045548,"id":"2","progress":0.48999999999999994,"total":497,"current":326}
+{"_e":"metro:bundling:progress","_t":1789718045778,"id":"2","progress":0.48999999999999994,"total":497,"current":327}
+{"_e":"metro:bundling:progress","_t":1789718045889,"id":"2","progress":0.48999999999999994,"total":498,"current":327}
+{"_e":"metro:bundling:progress","_t":1789718046304,"id":"2","progress":0.48999999999999994,"total":498,"current":328}
+{"_e":"metro:bundling:progress","_t":1789718046408,"id":"2","progress":0.48999999999999994,"total":499,"current":329}
+{"_e":"metro:bundling:progress","_t":1789718046626,"id":"2","progress":0.48999999999999994,"total":499,"current":330}
+{"_e":"metro:bundling:progress","_t":1789718046736,"id":"2","progress":0.48999999999999994,"total":499,"current":331}
+{"_e":"metro:bundling:progress","_t":1789718046847,"id":"2","progress":0.48999999999999994,"total":499,"current":332}
+{"_e":"metro:bundling:progress","_t":1789718046948,"id":"2","progress":0.5009149872138936,"total":503,"current":356}
+{"_e":"metro:bundling:progress","_t":1789718047047,"id":"2","progress":0.5726024280324715,"total":522,"current":395}
+{"_e":"metro:bundling:progress","_t":1789718047154,"id":"2","progress":0.6119946746025531,"total":565,"current":442}
+{"_e":"metro:bundling:progress","_t":1789718047262,"id":"2","progress":0.6521625043282548,"total":608,"current":491}
+{"_e":"metro:bundling:progress","_t":1789718047370,"id":"2","progress":0.6823028620530108,"total":615,"current":508}
+{"_e":"metro:bundling:progress","_t":1789718047560,"id":"2","progress":0.6849917377222553,"total":615,"current":509}
+{"_e":"metro:bundling:progress","_t":1789718047660,"id":"2","progress":0.6881456611570249,"total":616,"current":511}
+{"_e":"metro:bundling:progress","_t":1789718048245,"id":"2","progress":0.6908416259065611,"total":616,"current":512}
+{"_e":"metro:bundling:progress","_t":1789718048345,"id":"2","progress":0.7047373424814946,"total":623,"current":523}
+{"_e":"metro:bundling:progress","_t":1789718048448,"id":"2","progress":0.7560247814564297,"total":636,"current":553}
+{"_e":"metro:bundling:progress","_t":1789718048549,"id":"2","progress":0.8359997476732564,"total":642,"current":587}
+{"_e":"metro:bundling:progress","_t":1789718048649,"id":"2","progress":0.8755812056903974,"total":669,"current":626}
+{"_e":"metro:bundling:progress","_t":1789718048754,"id":"2","progress":0.8859757504404208,"total":681,"current":641}
+{"_e":"metro:bundling:progress","_t":1789718048856,"id":"2","progress":0.888742261639077,"total":681,"current":642}
+{"_e":"metro:bundling:progress","_t":1789718048958,"id":"2","progress":0.9140815753426127,"total":683,"current":653}
+{"_e":"metro:bundling:progress","_t":1789718049058,"id":"2","progress":0.9574818761750725,"total":698,"current":683}
+{"_e":"metro:bundling:progress","_t":1789718049160,"id":"2","progress":0.9971611086002066,"total":704,"current":703}
+{"_e":"metro:bundling:progress","_t":1789718049405,"id":"2","progress":0.999,"total":704,"current":704}
+{"_e":"metro:bundling:progress","_t":1789718049508,"id":"2","progress":0.999,"total":707,"current":707}
+{"_e":"metro:bundling:done","_t":1789718050012,"id":"2","total":707,"ms":22639.6305}
+{"_e":"metro:bundling:started","_t":1789718183750,"id":"5","platform":"ios","environment":null,"entry":"index.ts"}
+{"_e":"metro:bundling:progress","_t":1789718183751,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1789718183780,"id":"5","total":1,"ms":29.8541}
+{"_e":"metro:bundling:started","_t":1789718190829,"id":"8","platform":"ios","environment":null,"entry":"index.ts"}
+{"_e":"metro:bundling:progress","_t":1789718190829,"id":"8","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1789718190854,"id":"8","total":1,"ms":25.0749}
+{"_e":"metro:bundling:started","_t":1789718273949,"id":"a","platform":"ios","environment":null,"entry":"index.ts"}
+{"_e":"metro:bundling:progress","_t":1789718273949,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789718273950,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789718274051,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789718274162,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789718274262,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789718274362,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789718274463,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789718274575,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789718274680,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789718274780,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789718274880,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789718274980,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789718275081,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789718275182,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789718275283,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789718275388,"id":"a","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1789718275418,"id":"a","total":1,"ms":1469.3023}
+{"_e":"metro:client_log","_t":1789718276201,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789718276246,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789718402089,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:bundling:started","_t":1789718404189,"id":"c","platform":"ios","environment":null,"entry":"index.ts"}
+{"_e":"metro:bundling:progress","_t":1789718404190,"id":"c","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1789718404276,"id":"c","total":1,"ms":86.3905}
+{"_e":"metro:client_log","_t":1789718405084,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789718405144,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789718415790,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789718416970,"level":"error","data":["[TypeError: Cannot read property 'from' of undefined]"]}
+{"_e":"metro:client_log","_t":1789718436467,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789718437130,"level":"error","data":["[TypeError: Cannot read property 'from' of undefined]"]}
+{"_e":"metro:bundling:started","_t":1789718563348,"id":"k","platform":"ios","environment":null,"entry":"index.ts"}
+{"_e":"metro:bundling:progress","_t":1789718563349,"id":"k","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1789718563432,"id":"k","total":1,"ms":83.9818}
+{"_e":"metro:client_log","_t":1789718564287,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789718564353,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789718582307,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789718584577,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789718584630,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789718592928,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789718593527,"level":"error","data":["[Error: The request is missing a required parameter, includes an unsupported parameter value (other than grant type), repeats a parameter, includes multiple credentials, utilizes more than one mechanism for authenticating the client, or is otherwise malformed.\nMore info: AADSTS90023: The provided value for the input parameter 'redirect_uri' is not valid. The expected value is a URI which matches a redirect URI registered for this client application. Trace ID: d20ef811-9014-4af8-b641-d7ae10218301 Correlation ID: 252d1078-bab6-48da-b124-ac0d94605e46 Timestamp: 2026-09-18 08:02:24Z]"]}
+{"_e":"metro:client_log","_t":1789718609713,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"root:init","_t":1789718717272,"format":"v0-jsonl","version":"57.0.25"}
+{"_e":"env:mode","_t":1789718717273,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1789718717275,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1789718717554,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1789718717864,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1789718718092,"plugins":[]}
+{"_e":"metro:instantiate","_t":1789718721248,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1789718725242,"id":"3","platform":"ios","environment":null,"entry":"index.ts"}
+{"_e":"metro:bundling:progress","_t":1789718725243,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789718725245,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789718725345,"id":"3","progress":0.09998593947726102,"total":253,"current":80}
+{"_e":"metro:bundling:progress","_t":1789718725445,"id":"3","progress":0.27172928927116347,"total":564,"current":294}
+{"_e":"metro:bundling:progress","_t":1789718725545,"id":"3","progress":0.6441898415139476,"total":765,"current":614}
+{"_e":"metro:bundling:progress","_t":1789718725647,"id":"3","progress":0.7690792026988028,"total":951,"current":834}
+{"_e":"metro:bundling:progress","_t":1789718725747,"id":"3","progress":0.9849626201495194,"total":1060,"current":1052}
+{"_e":"metro:bundling:done","_t":1789718725800,"id":"3","total":1060,"ms":557.84}
+{"_e":"metro:client_log","_t":1789718726973,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789718727105,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789718735152,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789719353735,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789719366856,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789719366905,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:bundling:started","_t":1789719369352,"id":"5","platform":"ios","environment":null,"entry":"index.ts"}
+{"_e":"metro:bundling:progress","_t":1789719369352,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1789719369526,"id":"5","total":1,"ms":173.8412}
+{"_e":"metro:client_log","_t":1789719370397,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789719370440,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789719380960,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789719419886,"level":"error","data":["Supabase insert error:","{\"code\": \"42501\", \"details\": null, \"hint\": null, \"message\": \"new row violates row-level security policy for table \\\"student\\\"\"}"]}
+{"_e":"metro:server_log","_t":1789719493524,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone","60"]}
+{"_e":"metro:server_log","_t":1789720265296,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone","60"]}
+{"_e":"metro:bundling:started","_t":1789721915527,"id":"b","platform":"ios","environment":null,"entry":"index.ts"}
+{"_e":"metro:bundling:progress","_t":1789721915528,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789721915548,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789721915718,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789721915952,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789721916055,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789721916155,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789721916270,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789721916387,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789721916498,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789721916598,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789721916703,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789721916810,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789721916923,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789721917023,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789721917125,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789721917225,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789721917325,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789721917440,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789721940358,"id":"b","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1789721940404,"id":"b","total":1,"ms":24876.4197}
+{"_e":"metro:bundling:started","_t":1789722061685,"id":"e","platform":"ios","environment":null,"entry":"index.ts"}
+{"_e":"metro:bundling:progress","_t":1789722061685,"id":"e","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1789722061770,"id":"e","total":1,"ms":84.9162}
+{"_e":"metro:client_log","_t":1789722104875,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789722104922,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789722114048,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:bundling:started","_t":1789722213055,"id":"i","platform":"ios","environment":null,"entry":"index.ts"}
+{"_e":"metro:bundling:progress","_t":1789722213055,"id":"i","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1789722213461,"id":"i","total":1,"ms":405.9405}
+{"_e":"metro:bundling:started","_t":1789722226694,"id":"m","platform":"ios","environment":null,"entry":"index.ts"}
+{"_e":"metro:bundling:progress","_t":1789722226694,"id":"m","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1789722226785,"id":"m","total":1,"ms":90.8073}
+{"_e":"metro:client_log","_t":1789722230771,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789722230815,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789722232597,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789722255406,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"root:init","_t":1789920847849,"format":"v0-jsonl","version":"57.0.25"}
+{"_e":"env:mode","_t":1789920847876,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1789920847931,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1789920856824,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../..\\..\\app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1789920868080,"serverRoot":"../..\\..","projectRoot":"../..\\..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1789920873479,"plugins":[]}
+{"_e":"metro:instantiate","_t":1789920882173,"atlas":false,"workers":8,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1789920898668,"id":"3","platform":"ios","environment":null,"entry":"index.ts"}
+{"_e":"metro:bundling:progress","_t":1789920898668,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789920898672,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789920898772,"id":"3","progress":0.032215647600262985,"total":195,"current":35}
+{"_e":"metro:bundling:progress","_t":1789920898872,"id":"3","progress":0.2154793476604176,"total":405,"current":188}
+{"_e":"metro:bundling:progress","_t":1789920898972,"id":"3","progress":0.3730898466033601,"total":555,"current":339}
+{"_e":"metro:bundling:progress","_t":1789920899072,"id":"3","progress":0.398432969079088,"total":724,"current":457}
+{"_e":"metro:bundling:progress","_t":1789920899173,"id":"3","progress":0.6473551490670666,"total":829,"current":667}
+{"_e":"metro:bundling:progress","_t":1789920899272,"id":"3","progress":0.7616865467377529,"total":943,"current":823}
+{"_e":"metro:bundling:progress","_t":1789920899390,"id":"3","progress":0.8485767672110461,"total":1015,"current":935}
+{"_e":"metro:bundling:progress","_t":1789920899542,"id":"3","progress":0.999,"total":1063,"current":1063}
+{"_e":"metro:bundling:done","_t":1789920899739,"id":"3","total":1063,"ms":1071.1274}
+{"_e":"metro:client_log","_t":1789920902674,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789920902720,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:bundling:started","_t":1789921135843,"id":"5","platform":"ios","environment":null,"entry":"index.ts"}
+{"_e":"metro:bundling:progress","_t":1789921135843,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789921151715,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789921151815,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789921151891,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789921151991,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789921152091,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789921152193,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1789921152232,"id":"5","total":1,"ms":16388.4435}
+{"_e":"metro:client_log","_t":1789921154934,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789921154977,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789921163418,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789921209330,"level":"error","data":["Supabase insert error:","{\"code\": \"23505\", \"details\": null, \"hint\": null, \"message\": \"duplicate key value violates unique constraint \\\"student_number_unique\\\"\"}"]}
+{"_e":"metro:client_log","_t":1789921351885,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789921351940,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:bundling:started","_t":1789921384124,"id":"9","platform":"ios","environment":null,"entry":"index.ts"}
+{"_e":"metro:bundling:progress","_t":1789921384124,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1789921384125,"id":"9","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1789921384190,"id":"9","total":1,"ms":66.3533}
+{"_e":"metro:client_log","_t":1789921386765,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789921386848,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789921395115,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789921398888,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789921398954,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789921426599,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789921444921,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789921613049,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:client_log","_t":1789921613221,"level":"warn","data":["Linking requires a build-time setting `scheme` in the project's Expo config (app.config.js or app.json) for production apps, if it's left blank, your app may crash. The scheme does not apply to development in the Expo client but you should add it as soon as you start working with Linking to avoid creating a broken build. Learn more: https://docs.expo.dev/guides/linking/"]}
+{"_e":"metro:server_log","_t":1789921899135,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","host.exp.Exponent","iPhone","60"]}

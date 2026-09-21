@@ -6,7 +6,7 @@ export type StoredSession = {
   accessToken: string;
   refreshToken?: string;
   email: string;
-  expiresAt: number; // epoch ms
+  expiresAt: number;
   profileCompleted: boolean;
 };
 

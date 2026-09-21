@@ -3,6 +3,7 @@ import { View, Text, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 import * as WebBrowser from 'expo-web-browser';
 import * as AuthSession from 'expo-auth-session';
 import { saveSession } from '../utils/auth';
+import { supabase } from '../utils/supabase';
 
 WebBrowser.maybeCompleteAuthSession();
 
@@ -14,9 +15,8 @@ const discovery = {
   tokenEndpoint: `https://login.microsoftonline.com/${TENANT}/oauth2/v2.0/token`,
 };
 
-const TEST_STUDENT_PREFIX = 'notified.test.';
 function isAuthorizedStudent(email: string): boolean {
-  return email.toLowerCase().startsWith(TEST_STUDENT_PREFIX);
+  return email.toLowerCase().endsWith('.edu.ph');
 }
 
 export default function LoginScreen({ navigation }: any) {
@@ -58,14 +58,23 @@ export default function LoginScreen({ navigation }: any) {
           const email = profile.mail ?? profile.userPrincipalName ?? '';
 
           if (isAuthorizedStudent(email)) {
+            const { data: existingStudent } = await supabase
+              .from('student')
+              .select('student_id')
+              .eq('ms_account_id', email)
+              .maybeSingle();
+
+            const profileCompleted = !!existingStudent;
+
             await saveSession({
               accessToken: tokenResult.accessToken,
               refreshToken: tokenResult.refreshToken,
               email,
               expiresAt: Date.now() + (tokenResult.expiresIn ?? 3600) * 1000,
-              profileCompleted: false, // placeholder until Supabase check exists
+              profileCompleted,
             });
-            navigation.navigate('ProfileSetup', { email });
+
+            navigation.navigate(profileCompleted ? 'Dashboard' : 'ProfileSetup', { email });
           } else {
             navigation.navigate('AccessDenied', { email });
           }

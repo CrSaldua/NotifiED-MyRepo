@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { View, ActivityIndicator } from 'react-native';
 import LoginScreen from './screens/LoginScreen';
-import DashboardScreen from './screens/DashboardScreen';
+import MainTabs from './screens/MainTabs';
 import AccessDeniedScreen from './screens/AccessDeniedScreen';
 import ProfileSetupScreen from './screens/ProfileSetupScreen';
 import { getSession } from './utils/auth';
@@ -36,7 +36,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName={initialRoute}>
         <Stack.Screen name="Login" component={LoginScreen} />
-        <Stack.Screen name="Dashboard" component={DashboardScreen} />
+        <Stack.Screen name="Dashboard" component={MainTabs} />
         <Stack.Screen name="ProfileSetup" component={ProfileSetupScreen} />
         <Stack.Screen name="AccessDenied" component={AccessDeniedScreen} />
       </Stack.Navigator>
