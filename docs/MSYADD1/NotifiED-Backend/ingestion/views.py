@@ -1263,26 +1263,16 @@ def admin_event_webhook(request):
 
     # --------------------------------------------------------
 
-    # Automatically start Gemini processing
+    # NOTE: Gemini processing is intentionally NOT triggered here.
+    #
+    # Calling Gemini synchronously inside this request used to crash
+    # the Render free-tier worker (SIGKILL / out of memory), because
+    # the AI call ran inline on a 512MB instance. The row is left as
+    # "pending" and is instead picked up and processed by the
+    # scheduled GitHub Actions worker (scripts/process-pending-events.js),
+    # which has far more available memory and its own retry logic.
 
     # --------------------------------------------------------
-
-
-
-    try:
-        inserted_rows = insert_response.json()
-    except ValueError:
-        inserted_rows = []
-
-    if not inserted_rows:
-        return JsonResponse({
-            "error": "Source content was inserted but its row was not returned",
-            "event_id": event_id,
-            "source_reference": source_reference,
-        }, status=500)
-
-    inserted_row = inserted_rows[0]
-    ai_result = process_source_content(inserted_row)
 
 
 
@@ -1294,7 +1284,7 @@ def admin_event_webhook(request):
 
         "source_reference": source_reference,
 
-        "ai_processing": ai_result,
+        "status": "pending_ai_processing",
 
     }, status=201)
 # ============================================================
