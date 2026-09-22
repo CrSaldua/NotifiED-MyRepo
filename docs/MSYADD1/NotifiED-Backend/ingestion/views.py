@@ -632,7 +632,7 @@ def process_source_content(row):
             "status": "already_claimed_or_not_pending",
         }
 
-    model = genai.GenerativeModel("gemini-3.6-flash")
+    model = genai.GenerativeModel("gemini-3.1-flash-lite")
     prompt = PROMPT_TEMPLATE.format(raw_text=raw_text)
 
     try:
