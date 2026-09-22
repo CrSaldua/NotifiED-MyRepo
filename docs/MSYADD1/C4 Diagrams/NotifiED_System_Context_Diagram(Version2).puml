@@ -1,48 +1,39 @@
-@startuml SystemContext_NotifiED_Simplified
- 
+@startuml System_Context_Diagram_NotifiED
+
 title System Context Diagram - NotifiED (Simplified per Adviser Feedback)
- 
+
 skinparam backgroundColor #FFFFFF
 skinparam defaultTextAlignment center
 skinparam roundcorner 10
 skinparam shadowing false
- 
+skinparam ranksep 50
+skinparam nodesep 50
+
 skinparam rectangle {
     BorderColor #666666
     FontColor #FFFFFF
-    FontSize 14
+    FontSize 12
 }
- 
+
 skinparam arrow {
     Color #666666
     FontColor #333333
-    FontSize 12
+    FontSize 10
 }
- 
-' ===== Person =====
-rectangle "**Student**\n<size:11>A university student who wants to discover\ncampus events, view their calendar, access\ninstitutional email, and manage their profile\nfrom a single application.</size>" as student #08427B
- 
-' ===== Core System (in scope) =====
-rectangle "**NotifiED Mobile Application**\n<size:11>React Native app providing event discovery,\norganization directory, calendar viewing, email\naccess, AI-assisted interaction, notifications,\nand profile management.\n(Team 2 - our system)</size>" as notified #1168BD
- 
-' ===== External Systems =====
-rectangle "**Microsoft Identity Platform**\n<size:11>Authenticates students using their\ninstitutional Microsoft account. Issues\nauthorization tokens used to access the\nstudent's calendar and email, and to\nredirect to their institutional email.</size>" as msIdentity #999999
- 
-rectangle "**NotifiED Backend**\n<size:11>Manages event submission, approval, and\norganization data. Stores the student's\nNotifiED profile. Exposes this information\nthrough standardized APIs.\n(Developed by Team 1)</size>" as backendService #999999
- 
-' ===== Relationships =====
-student -down-> notified : "Signs in, views events,\ncalendar, email access,\nprofile, and notifications"
- 
-notified -right-> msIdentity : "Authenticates student, retrieves\ncalendar, redirects to email\n<size:10>[OAuth 2.0 / HTTPS]</size>"
- 
-notified -down-> backendService : "Requests events, organizations,\nand student profile data\n<size:10>[REST API / HTTPS]</size>"
- 
-' ===== Legend =====
-legend right
-  |= Color |= Type |
-  |<#08427B>| Person |
-  |<#1168BD>| System (In Scope) |
-  |<#999999>| External System |
-endlegend
- 
+
+' ===== Elements =====
+rectangle "**Student**\nA university student who wants to discover\ncampus events, view their calendar, access\ninstitutional email, and manage their profile\nfrom a single application." as student #08427B
+
+rectangle "**NotifiED Mobile Application**\nReact Native app providing event discovery,\norganization directory, calendar viewing, email\naccess, AI-assisted interaction, notifications,\nand profile management.\n(Team 2 - our system)" as mobileApp #1168BD
+
+rectangle "**NotifiED Admin**\nManages event submission, approval, and\norganization data. Stores the student's\nNotifiED profile. Exposes this information\nthrough standardized APIs.\n(Developed by Team 1)" as backendService #999999
+
+rectangle "**Microsoft Identity Platform**\nAuthenticates students using their\ninstitutional Microsoft account. Issues\nauthorization tokens to access the\nstudent's calendar and email, and to\nredirect to their institutional email." as msIdentity #999999
+
+' ===== Layout Control (Hidden links to center the mobile app) =====
+student -down-> mobileApp : "Signs in, views events,\ncalendar, email access,\nprofile, and notifications"
+mobileApp -down-> backendService : "Requests events, organizations,\nand student profile data\n[WebHook / HTTPS]"
+
+mobileApp -right-> msIdentity : "Authenticates student, retrieves\ncalendar, redirects to email\n[OAuth 2.0 / HTTPS]"
+
 @enduml
