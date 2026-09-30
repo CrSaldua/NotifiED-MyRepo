@@ -19,5 +19,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('mock/', include('mock_source_api.urls')),
     path('ingestion/', include('ingestion.urls')),
 ]
